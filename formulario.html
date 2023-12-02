@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Formulario Mockup</title>
+  <title>Formulario de Inicio de Sesión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    form {
+      margin: 0 auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f4f4f4;
+    }
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+  </style>
 </head>
 <body>
+  <form action="">
+    <div class="container">
+      <label for="username"><b>Nombre de Usuario</b></label>
+      <input type="text" placeholder="Ingresa tu nombre de usuario" id="username" required>
 
-  <h1>Formulario Mockup</h1>
+      <label for="password"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingresa tu contraseña" id="password" required>
 
-  <form>
-    <label>Nombre:</label>
-    <input type="text" placeholder="Ingresa tu nombre">
-
-    <label>Email:</label>
-    <input type="email" placeholder="Ingresa tu dirección de correo electrónico">
-
-    <label>Mensaje:</label>
-    <textarea placeholder="Escribe tu mensaje aquí"></textarea>
-
-    <input type="submit" value="Enviar">
+      <button type="submit">Iniciar Sesión</button>
+    </div>
   </form>
-
 </body>
 </html>
 
