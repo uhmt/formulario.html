@@ -1,0 +1,28 @@
+const k = prompt('Inserte la calificacion:')
+const calificacion = Number(k)
+
+function calificaciones(){
+  
+  if (calificacion >= 90 && calificacion <= 100){
+    alert('La calificacion en letras es una A') 
+
+  }else if(calificacion >= 80 && calificacion <= 89){
+    alert('La calificacion en letras es una B')
+
+  }else if(calificacion >= 70 && calificacion <= 79){
+    alert('La calificacion en letras es una C')
+
+  }else if(calificacion >= 60 && calificacion <= 69){
+    alert('La calificacion en letras es una D')
+
+  }else if(calificacion < 60){
+    alert('La calificacion en letras es una F')
+  }else{
+    alert('el valor ingresado no es valido')
+    const intentar:any = prompt('Quieres intentar otra vez \n\n1(si) \n\n2(no)?')
+    if (intentar == 1){
+      calificaciones();
+    }
+  }
+}
+calificaciones();
